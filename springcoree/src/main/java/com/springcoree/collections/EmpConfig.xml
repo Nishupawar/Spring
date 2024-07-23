@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.springcoree.collections.Employee" name="emp">
+
+<property name="id"><value>1001</value></property>
+
+<property name="name">
+<list>
+<value>Nishu</value>
+<value>Gayatri</value>
+<value>Praju</value>
+</list>
+</property>
+
+<property name="add">
+<set>
+<value>Ninam</value>
+<value>Padali</value>
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="Java" value="June"/>
+<entry key="Spring" value="May"/>
+</map>
+</property>
+
+<property name="props">
+<props>
+<prop key="abc">Hii</prop>
+<prop key="xyz" >Bye</prop>
+</props>
+</property>
+
+
+</bean>
+</beans>

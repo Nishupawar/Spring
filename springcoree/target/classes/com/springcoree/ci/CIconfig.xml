@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean class="com.springcoree.ci.Certi" name="cer" >
+<constructor-arg value="Java is programming Language" />
+</bean>
+
+<bean class="com.springcoree.ci.Person" name="person">
+<constructor-arg><value>Nishu Pawar</value></constructor-arg>
+<constructor-arg value="1001" type="int"></constructor-arg>
+<constructor-arg ref="cer"/>
+</bean>
+
+<bean class="com.springcoree.ci.Addition" name="add">
+<constructor-arg value="10" type="int" index="1"/>
+<constructor-arg value="20" type="int" index="0"/>
+</bean>
+
+<bean class="com.springcoree.ci.Stringg" name="str">
+<constructor-arg value="Nishu"/>
+<constructor-arg value="Pawar" />
+</bean>
+
+</beans>
